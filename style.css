@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0efeb;
+  font-family: sans-serif;
+  color: #7e7e63;
+}
+
+nav {
+  background: #b7b7a4;
+  color: #f0efeb;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.error-msg {
+  color: #e96239;
+  text-align: center;
+}
+
+.section {
+  width: 80%;
+  max-width: 75rem;
+  margin: 5rem auto 3rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.section-med {
+  width: 40%;
+  max-width: 35rem;
+  margin: 1rem auto 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.section-box {
+  border: 1px solid #b7b7a4;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.section button {
+  display: block;
+  width: 100%;
+  max-width: 60%;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  border: none;
+  background: #7e7e63;
+  color: #f0efeb;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.section button.active {
+  background: #50503f;
+}
+
+.form {
+  width: 100%;
+}
+
+.form p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form span {
+  color: #50503f;
+}
+
+.form input {
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 5px solid #b7b7a4;
+  background: none;
+  outline: none;
+  color: #243642;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
