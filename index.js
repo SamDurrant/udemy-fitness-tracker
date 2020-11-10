@@ -21,6 +21,9 @@ btns.forEach((btn) =>
 
     // set text of form span
     formAct.textContent = activity
+
+    // call the update function
+    update(data)
   })
 )
 
@@ -39,6 +42,7 @@ form.addEventListener('submit', (e) => {
         error.textContent = ''
         input.value = ''
       })
+      .catch((err) => console.log(err))
   } else {
     error.textContent = 'Please enter a valid distance'
   }

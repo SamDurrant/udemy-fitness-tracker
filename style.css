@@ -50,6 +50,7 @@ nav h3 {
   padding: 1rem;
   display: grid;
   place-items: center;
+  align-content: center;
 }
 
 .section button {
@@ -96,4 +97,17 @@ nav h3 {
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-weight: 500;
+}
+
+.x-axis path,
+.y-axis path,
+.x-axis line,
+.y-axis line {
+  stroke: #50503f;
+}
+
+.x-axis text,
+.y-axis text {
+  fill: #50503f;
+  font-size: 14px;
 }
